@@ -7,7 +7,7 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        icon: 'https://vitejs.dev/logo.svg',
+        icon: 'https://raw.githubusercontent.com/pacexy/canned-laughter/main/public/images/1f604.png',
         namespace: 'npm/vite-plugin-monkey',
         match: ['*://www.bilibili.com/bangumi/play/ep*'],
       },
