@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "pacexy",
+  "license": "MIT",
+  "description": "Add canned laughter to web. 为网页添加罐头笑声。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pacexy/canned-laughter"
+  },
+  "bugs": "https://github.com/pacexy/canned-laughter/issues",
+  "homepage": "https://github.com/pacexy/canned-laughter#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
