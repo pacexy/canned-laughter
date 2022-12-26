@@ -1,21 +1,24 @@
-import { cannedLaughter } from './audios'
+import audios from './audios'
 
-function createAudio() {
+function play() {
   const audio = document.createElement('audio')
 
-  audio.id = 'canned-laughter'
-  audio.src = cannedLaughter
+  audio.classList.add('canned-laughter')
   audio.volume = 0.5
   document.body.append(audio)
 
-  return audio
-}
+  audio.addEventListener('pause', () => {
+    audio.remove()
+  })
 
-const audio = createAudio()
+  const i = Math.floor(Math.random() * audios.length)
+  audio.src = audios[i]
+  audio.play()
+}
 
 window.addEventListener('keydown', (e) => {
   if (e.key === 'h') {
-    audio.play()
+    play()
   }
 })
 
